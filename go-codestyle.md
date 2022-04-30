@@ -2,9 +2,9 @@
 
 ## Chapter 1. Project Structure
 1.1. Root of the project should have as little as possible directories/packages.  
-     In a perfect case root should contain the structure of two packages:  
-     - one containing executable files
-     - one containing helping functions/methods/structures/interfaces split by packages.  
+*In a perfect case root should contain the structure of two packages:*  
+  - *one containing executable files*
+  - *one containing helping functions/methods/structures/interfaces split by packages.*  
 
 *The aim of this requirement is to increase readability of program source code.*  
 
@@ -13,7 +13,7 @@
 
 2.1.1. All the variables, functions, methods etc. should be named in CamelCase practice.   
 2.1.2. If name starts with an uppercase letter, function will be available to import from other packages.  
-2.1.3. If name starts with a lowercase letter, other packages will not be able to import it.
+2.1.3. If name starts with a lowercase letter, other packages will not be able to import it.  
 2.1.4. Do not name variables, functions, methods etc. with a repeating or reminding names
 
 **Don't:**
@@ -64,11 +64,11 @@ type Date struct {
   *According to Go standards, function's comment should have name of function in it.*  
 
 3.1.5. Variables (unless they are temporary or their usage is obvious) should be commented when initialised.  
-*Try to name them so that comments were not necessary.*
+*Try to name them so that comments were not necessary.*  
 3.1.6. Important variables that are used all over the function should be initialised in the beginning of a function.    
 3.1.7. Variables initialised with `:=` sign have to be commented  
-3.1.8. Within a function, any complex piece of code should have a comment explaining what is going on.  
-  It should be one line before the piece of code and have an extra empty line.  
+
+3.1.8. Within a function, any complex piece of code should have a comment explaining what is going on. It should be one line before the piece of code and have an extra empty line.  
 
 **Don't:**
 ```
@@ -96,6 +96,5 @@ func GreatestCommonDivisor(aOriginal, bOriginal Polynomial) Polynomial {
 . . .
 ```
 ### 3.2. What should be avoided
-3.2.1. If . . . else if . . . else
-Try avoiding chains of if else statements if there is more than one condition.  
-Use switch cases or returns instead.
+3.2.1. Try avoiding chains of if else statements *(If . . . else if . . . else)*  
+If there is more than one condition use switch cases or returns instead.
